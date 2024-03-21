@@ -5,7 +5,7 @@ import logo from "../../assets/logo.svg";
 
 const Header = () => {
   return (
-    <header className='container'>
+    <header>
       <Link to='/' className="logo">
         <img src={logo} alt="logo" />
         <span>Fit-lex</span>
