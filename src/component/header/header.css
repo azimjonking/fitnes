@@ -1,0 +1,39 @@
+header {
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+header .logo span {
+    font-family: var(--lato);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: var(--main-color);
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header .navbar li a {
+    font-family: var(--lato);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+header .navbar li a:hover {
+    color: var(--main-color);
+}
