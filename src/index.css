@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+
+  /* font family */
+  --lato: "Lato", sans-serif;
+  --inter: "Inter", sans-serif;
+  --audiowide: "Audiowide", sans-serif;
+
+  /* color */
+  --main-color: #BBF246;
+  --text-color: #FFFFFF;
+  --bg-color: linear-gradient(83.75deg, #686868 0%, #BBF246 100%);
+  --bg-secondary: #192126;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  background: #000000;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+/* reusable css start */
+
+.title {
+  font-family: var(--lato);
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 38.4px;
+  color: var(--text-color)
+}
+
+.subtitle {
+  font-family: var(--lato);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.8px;
+  color: var(--text-color);
+}
+
+.btn-primary {
+  padding: 16px 30px;
+  border-radius: 40px;
+  font-family: var(--audiowide);
+  font-size: 20px;
+  line-height: 25.5px;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: inset 0 10px 30px rgba(147, 70, 159, 0.25);
+}
+
+.btn-primary {
+  background: var(--main-color);
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background: var(--bg-secondary);
+}
+
+.btn-secondary {
+  background: var(--bg-secondary);
+  color: var(--main-color);
+}
+
+.btn-secondary:hover {
+  background: var(--main-color);
 }
