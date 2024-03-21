@@ -45,6 +45,11 @@ button, input {
 
 /* reusable css start */
 
+.container {
+  margin: 0 auto;
+  width: 85%;
+}
+
 .title {
   font-family: var(--lato);
   font-weight: 900;
@@ -70,7 +75,7 @@ button, input {
   letter-spacing: 2px;
   transition: all 0.3s ease;
   cursor: pointer;
-  box-shadow: inset 0 10px 30px rgba(147, 70, 159, 0.25);
+  box-shadow: 0 10px 30px rgba(147, 70, 159, 0.25);
 }
 
 .btn-primary {
@@ -80,6 +85,7 @@ button, input {
 
 .btn-primary:hover {
   background: var(--bg-secondary);
+  color: var(--main-color);
 }
 
 .btn-secondary {
