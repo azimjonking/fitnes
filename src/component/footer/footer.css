@@ -1,0 +1,120 @@
+.footer-container {
+    width: 100%;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+.footer-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer-left .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.footer-left .footer-logo a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-left .footer-logo a span {
+    font-family: var(--lato);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    color: var(--main-color);
+}
+
+.footer-left .footer-logo p {
+    font-family: var(--lato);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.footer-left .footer-logo p span {
+    color: var(--main-color);
+}
+
+.footer-left .footer-navbar {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-left .footer-navbar li a {
+    font-family: var(--lato);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    transition: all 0.3s ease;
+}
+
+.footer-left .footer-navbar li a:hover {
+    color: var(--main-color);
+}
+
+.footer-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-right > p {
+    font-family: var(--lato);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.footer-bottom {
+    padding: 50px 0;
+    border-top: 1px solid #BBF246;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-bottom .copyright {
+    font-family: var(--lato);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.footer-bottom .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-bottom .center a {
+    font-family: var(--lato);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: center;
+    color: var(--text-color)  
+}
+
+.footer-bottom .social-network {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
