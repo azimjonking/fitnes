@@ -1,0 +1,42 @@
+.mainSection {
+    padding-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainSection .main-title {
+    font-family: var(--lato);
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 57.6px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.mainSection .main-title > span {
+    color: var(--main-color);
+}
+
+.mainSection .subtitle {
+    text-align: center;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.mainSection .mainSection-btns {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.mainSection .mainSection-img {
+    margin-top: 50px;
+    width: 60%;
+}
+
+.mainSection .mainSection-img img {
+    width: 100%;
+}
