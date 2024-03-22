@@ -8,6 +8,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: #000;
+    z-index: 10;
 }
 
 header .logo {
