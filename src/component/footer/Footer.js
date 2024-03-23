@@ -63,8 +63,8 @@ const Footer = () => {
       <div className="footer-bottom">
         <p className="copyright">© Fit-lex. Все права защищены</p>
         <div className="center">
-          <Link to='/'>Политика конфиденциальности</Link>
-          <Link to='/'>Политика использования файлов cookie</Link>
+          <Link to='/privacy'>Политика конфиденциальности</Link>
+          <Link to='/cookie'>Политика использования файлов cookie</Link>
         </div>
         <ul className="social-network">
           <li>
