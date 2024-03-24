@@ -13,10 +13,10 @@ const Home = () => {
     <div className='home'>
       <MainSection />
       <Opportunity />
-      {/* <Instruction /> */}
+      <Instruction />
       {/* <Application /> */}
       {/* <Testimonial /> */}
-      {/* <Download /> */}
+      <Download />
       <Contact />
     </div>
   )
