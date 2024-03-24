@@ -1,50 +1,69 @@
 .privacyInfo {
-    padding-top: 180px;
-    padding-bottom: 50px;
+    /* padding-top: 180px; */
+    padding-top: 12.5vw;
+    /* padding-bottom: 50px; */
+    padding-bottom: 3.47vw;
     position: relative;
 }
 
 .privacy-title {
     font-family: var(--inter);
-    font-size: 32px;
+    /* font-size: 32px; */
+    font-size: 2.2vw;
     font-weight: 600;
-    line-height: 30px;
+    /* line-height: 30px; */
+    line-height: 2.08vw;
     text-align: left;
     color: var(--text-color);
 }
 
 .privacy-subtitle {
     width: 80%;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-top: 3.47vw;
     font-family: var(--inter);
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1.1vw;
     font-weight: 400;
-    line-height: 30px;
+    /* line-height: 30px; */
+    line-height: 2.08vw;
     text-align: left;
     color: var(--text-color);
 }
 
 .privacy-list {
     width: 80%;
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin-top: 2.08vw;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    /* gap: 20px; */
+    gap: 1.38vw;
 }
 
 .privacy-list .list-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    /* gap: 10px; */
+    gap: 0.7vw;
+}
+
+.privacy-list .list-item .list-title {
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
 }
 
 .privacy-list .list-item .list-title span{
     font-family: var(--inter);
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1.1vw;
     font-weight: 600;
-    line-height: 30px;
+    /* line-height: 30px; */
+    line-height: 2.08vw;
     text-align: left;
     color: var(--text-color);
 }
@@ -52,16 +71,19 @@
 .privacy-list .list-item .list-desc, 
 .privacyData-update {
     font-family: var(--inter);
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1.1vw;
     font-weight: 400;
-    line-height: 30px;
+    /* line-height: 30px; */
+    line-height: 2.08vw;
     text-align: left;
     color: var(--text-color);
     opacity: 0.9;
 }
 
 .privacyData-update {
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-top: 1.38vw;
 }
 
 .privacyInfo .shadow-1 {

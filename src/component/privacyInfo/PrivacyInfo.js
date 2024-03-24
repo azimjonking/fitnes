@@ -21,7 +21,7 @@ const PrivacyInfo = () => {
           return (
             <li className="list-item" key={index}>
               <p className="list-title">
-                <span>{data.id}</span>. <span>{data.title}</span>
+                <span>{data.id}.</span><span>{data.title}</span>
               </p>
               <p className="list-desc">
                 {data.desc}
