@@ -1,5 +1,6 @@
 .testimonial {
-  padding: 50px 0;
+  /* padding: 50px 0; */
+  padding: 3.47vw 0;
 }
 
 .testimonial .title {
@@ -7,12 +8,14 @@
 }
 
 .testimonial .subtitle {
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  margin-top: 2.08vw;
   text-align: center;
 }
 
 .testimonial-container {
-  margin-top: 80px;
+  /* margin-top: 80px; */
+  margin-top: 5.55vw;
 }
 
 .swiper {
@@ -21,7 +24,8 @@
 }
 
 .swiper-wrapper {
-  gap: 25px;
+  /* gap: 25px; */
+  gap: 1.74vw;
 }
 
 .swiper-slide {
@@ -36,27 +40,39 @@
 .swiper {
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 130px;
+  /* padding-bottom: 130px; */
+  padding-bottom: 9.03vw;
 }
 
 .testimonial-item {
-  padding: 20px 100px 20px 20px;
+  /* padding: 20px 100px 20px 20px; */
+  padding: 1.38vw 6.94vw 1.38vw 1.38vw;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 15px;
-  border-radius: 15px;
+  /* gap: 15px; */
+  gap: 1.04vw;
+  /* border-radius: 15px; */
+  border-radius: 1.04vw;
   background: linear-gradient(83.75deg, #1d1b1b 0%, #1a2206 100%);
-  border: 1px solid var(--main-color);
+  /* border: 1px solid var(--main-color); */
+  border: 0.07vw solid var(--main-color);
+}
+
+.testimonial-item img {
+  /* width: 50px; */
+  width: 3.47vw;
 }
 
 .testimonial-text {
   text-align: left;
   font-family: var(--inter);
-  font-size: 16px;
+  /* font-size: 16px; */
+  font-size: 1.1vw;
   font-weight: 400;
-  line-height: 19.36px;
+  /* line-height: 19.36px; */
+  line-height: 1.34vw;
   text-align: left;
   color: var(--text-color);
   opacity: 0.7;
@@ -64,23 +80,29 @@
 
 .testimonial-client {
   font-family: var(--inter);
-  font-size: 20px;
+  /* font-size: 20px; */
+  font-size: 1.38vw;
   font-weight: 500;
-  line-height: 24.2px;
+  /* line-height: 24.2px; */
+  line-height: 1.67vw;
   text-align: left;
   color: var(--text-color);
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  width: 60px;
-  height: 60px;
+  /* width: 60px; */
+  width: 4.16vw;
+  /* height: 60px; */
+  height: 4.16vw;
   border-radius: 50%;
-  border: 1px solid var(--main-color);
+  /* border: 1px solid var(--main-color); */
+  border: 0.07vw solid var(--main-color);
   color: var(--main-color);
   left: 50%;
   top: auto;
-  bottom: 30px;
+  /* bottom: 30px; */
+  bottom: 2.08vw;
 }
 
 .swiper-button-next:hover,
@@ -91,22 +113,27 @@
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
-  font-size: 23px;
+  /* font-size: 24px; */
+  font-size: 1.66vw;
   transition: transform 0.3s ease;
 }
 
 .swiper-button-prev:hover:after {
-  transform: scale(1.1) translateX(-2px);
+  /* transform: scale(1.1) translateX(-2px); */
+  transform: scale(1.1) translateX(-0.14vw);
 }
 
 .swiper-button-next:hover:after {
-  transform: scale(1.1) translateX(2px);
+  /* transform: scale(1.1) translateX(2px); */
+  transform: scale(1.1) translateX(0.14vw);
 }
 
 .swiper-button-next {
-  transform: translateX(30px);
+  /* transform: translateX(30px); */
+  transform: translateX(2.08vw);
 }
 
 .swiper-button-prev {
-  transform: translateX(calc(-100% - 30px));
+  /* transform: translateX(calc(-100% - 30px)); */
+  transform: translateX(calc(-100% - 2.08vw));
 }

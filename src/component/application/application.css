@@ -1,5 +1,6 @@
 .application {
-    padding: 100px 0;
+    /* padding: 100px 0; */
+    padding: 6.94vw 0;
 }
 
 .categories-btns {
@@ -8,16 +9,21 @@
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
-    gap: 15px;
+    /* gap: 15px; */
+    gap: 1.04vw;
 }
 
 .categories-btns .btn {
-    padding: 15px 30px;
+    /* padding: 15px 30px; */
+    padding: 1.04vw 2.08vw;
     font-family: var(--audiowide);
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 0.97vw;
     font-weight: 400;
-    line-height: 17.85px;
-    letter-spacing: 0.01em;
+    /* line-height: 17.85px; */
+    line-height: 1.24vw;
+    /* letter-spacing: 0.01em; 0.01 * 18 = 0.18px */
+    letter-spacing: 0.1vw;
     background: var(--bg-secondary);
     color: var(--main-color);
 }
@@ -33,18 +39,24 @@
 
 
 .application-container {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-top: 3.47vw;
 }
 
 .application-content {
     width: 100%;
     display: grid;
     grid-template-columns: 3fr 4fr 3fr;
-    gap: 30px;
+    /* gap: 30px; */
+    gap: 2.08vw;
     align-items: center;
 }
 
 .application-content .img {
+    width: 100%;
+}
+
+.application-content .img > span {
     width: 100%;
 }
 
@@ -61,24 +73,30 @@
 }
 
 .application-content .application-box .box-title {
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
+    margin-bottom: 1.04vw;
     font-family: var(--lato);
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 1.66vw;
     font-weight: 400;
-    line-height: 25px;
+    /* line-height: 25px; */
+    line-height: 1.74vw;
     text-align: left;
     color: var(--text-color);
 }
 
 .application-content .application-box .box-text {
     font-family: var(--lato);
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 1.1vw;
     font-weight: 400;
-    line-height: 25px;
+    /* line-height: 25px; */
+    line-height: 1.74vw;
     text-align: left;
     color: var(--text-color);
 }
 
 .application-content .application-box .text2-1 {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-top: 3.47vw;
 }
