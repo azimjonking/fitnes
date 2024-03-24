@@ -1,5 +1,6 @@
 .mainSection {
-    padding-top: 180px;
+    /* padding-top: 180px; */
+    padding-top: 12.5vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,9 +10,11 @@
 
 .mainSection .main-title {
     font-family: var(--lato);
-    font-size: 48px;
+    /* font-size: 48px; */
+    font-size: 3.33vw;
     font-weight: 900;
-    line-height: 57.6px;
+    /* line-height: 57.6px; */
+    line-height: 4vw;
     text-align: center;
     color: var(--text-color);
 }
@@ -22,20 +25,28 @@
 
 .mainSection .subtitle {
     text-align: center;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-top: 1.38vw;
     width: 60%;
 }
 
 .mainSection .mainSection-btns {
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin-top: 2.08vw;
     display: flex;
     align-items: center;
-    gap: 50px;
+    /* gap: 50px; */
+    gap: 3.47vw;
 }
 
 .mainSection .mainSection-img {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-top: 3.47vw;
     width: 60%;
+}
+
+.mainSection .mainSection-img span {
+    width: 100%;
 }
 
 .mainSection .mainSection-img img {
