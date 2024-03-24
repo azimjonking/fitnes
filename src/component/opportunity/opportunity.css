@@ -1,5 +1,6 @@
 .opportunity {
-    padding: 50px 0;
+    /* padding: 50px 0; */
+    padding: 3.47vw 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,49 +12,67 @@
 }
 
 .opportunity .subtitle {
-    margin-top: 30px;
+    /* margin-top: 30px; */
+    margin-top: 2.08vw;
     width: 60%;
     text-align: center;
 }
 
 .opportunity-container {
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    margin-top: 3.47vw;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    /* gap: 30px; */
+    gap: 2.08vw;
 }
 
 .opportunity-container .option {
-    padding: 15px 50px 15px 15px;
+    /* padding: 15px 50px 15px 15px; */
+    padding: 1.04vw 3.47vw 1.04vw 1.04vw;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-radius: 15px;
+    /* border-radius: 15px; */
+    border-radius: 1.04vw;
     background: linear-gradient(83.75deg, #1d1b1b 0%, #1a2206 100%);
-    border: 1px solid var(--main-color);
+    /* border: 1px solid var(--main-color); */
+    border: 0.07vw solid var(--main-color);
+}
+
+.opportunity-container .option img {
+    /* width: 50px; */
+    width: 3.47vw;
 }
 
 .opportunity-container .option-title {
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin-top: 1.38vw;
     font-family: var(--inter);
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.25vw;
     font-weight: 500;
-    line-height: 21.78px;
+    /* line-height: 21.78px; */
+    line-height: 1.51vw;
     color: var(--text-color);
 }
 
 .opportunity-container .option-text {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin-top: 0.7vw;
     font-family: var(--inter);
-    font-size: 12px;
+    /* font-size: 12px; */
+    font-size: 0.83vw;
     font-weight: 400;
-    line-height: 14.52px;
+    /* line-height: 14.52px; */
+    line-height: 1vw;
     color: var(--text-color);
     opacity: 0.7;
 }
 
 .opportunity > button {
-    margin-top: 60px;
+    /* margin-top: 60px; */
+    margin-top: 4.16vw;
 }
