@@ -5,7 +5,7 @@ import optionsData from "./optionsData";
 
 const Opportunity = () => {
   return (
-    <section className='opportunity container'>
+    <section className='opportunity container' id='opportunity'>
       <h1 className="title">Уникальные возможности для перевоплощения вашего тела</h1>
       <p className="subtitle">Раскройте свой потенциал с нашим мобильным приложением, где бы вы не находились.</p>
 

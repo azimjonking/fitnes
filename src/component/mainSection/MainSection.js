@@ -6,7 +6,7 @@ import mainImg from "../../assets/mainImg.svg";
 
 const mainSection = () => {
   return (
-    <section className="mainSection container">
+    <section className="mainSection container" id='mainSection'>
       <h1 className="main-title">
         Становись сильнее <span>каждый день</span><br /> оставайся в форме{" "}
         <span>всегда</span> вместе с Fit-lex
