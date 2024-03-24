@@ -2,3 +2,54 @@
     padding-top: 180px;
     padding-bottom: 50px;
 }
+
+.cookieInfo-title {
+    font-family: var(--inter);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.cookieInfo-update {
+    margin-top: 10px;
+    font-family: var(--inter);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.cookie-info__title {
+    width: 80%;
+    font-family: var(--inter);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    color: var(--text-color);
+}
+
+.cookie-info__desc,
+.cookie-info__list-item,
+.cookie-info__title span {
+    font-family: var(--inter);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: var(--text-color);
+    opacity: 0.9;
+}
+
+.cookie-info__desc,
+.cookie-info__list-item {
+    width: 80%;
+}
+
+.cookieInfo .mt-4 {
+    margin-top: 40px;
+}
