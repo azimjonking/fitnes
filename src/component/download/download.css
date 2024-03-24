@@ -35,19 +35,19 @@
     gap: 50px;
 }
 
-.download-info .download-btns button {
+.download-info .download-btns a {
     background: #000000;
 }
 
-.download-info .download-btns button:hover {
+.download-info .download-btns a:hover {
     background: var(--text-color);
 }
 
-.download-info .download-btns button img {
+.download-info .download-btns a img {
     filter: invert(1);
 }
 
-.download-info .download-btns button:hover img {
+.download-info .download-btns a:hover img {
     filter: invert(0);
 }
 
@@ -55,7 +55,7 @@
     color: var(--text-color);
 }
 
-.download-info .download-btns button:hover .link-info span {
+.download-info .download-btns a:hover .link-info span {
     color: #000000;
 }
 

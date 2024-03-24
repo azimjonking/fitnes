@@ -11,15 +11,31 @@ import youtube from "../../assets/youtube.svg";
 import telegram from "../../assets/telegram.svg";
 
 const Footer = () => {
+
+  const links = [
+    { path: "mainSection", name: "Главная" },
+    { path: "opportunity", name: "Преимущества" },
+    { path: "instruction", name: "Как это работает" },
+    { path: "contact", name: "Поддержка" },
+  ];
+
   return (
     <footer className="container">
       <div className="footer-container">
         <div className="footer-left">
           <div className="footer-logo">
-            <Link to="mainSection">
-              <img src={logo} alt="logo" />
-              <span>Fit-lex</span>
-            </Link>
+            {document.location.pathname == "/" ? (
+              <Link to="mainSection">
+                <img src={logo} alt="logo" />
+                <span>Fit-lex</span>
+              </Link>
+            ) : (
+              <NavLink to="/">
+                <img src={logo} alt="logo" />
+                <span>Fit-lex</span>
+              </NavLink>
+            )}
+
             <p>
               Становись сильнее <span>каждый день</span>
               <br />
@@ -28,69 +44,44 @@ const Footer = () => {
           </div>
 
           <ul className="footer-navbar">
-            <li>
-              <Link
-                to="mainSection"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={500}
-              >
-                Главная
-              </Link>
+            {links.map((link, i) => {
+              return (
+                <li className="link" key={i}>
+              {document.location.pathname == "/" ? (
+                <Link
+                  to={link.path}
+                  spy={true}
+                  smooth={true}
+                  offset={-100}
+                  duration={500}
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <NavLink to="/">{link.name}</NavLink>
+              )}
             </li>
-            <li>
-              <Link
-                to="opportunity"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-              >
-                Преимущества
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="instruction"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-              >
-                Как это работает
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-100}
-                duration={500}
-              >
-                Поддержка
-              </Link>
-            </li>
+              )
+            })}
           </ul>
         </div>
 
         <div className="footer-right">
           <p>Загрузите наше мобильное приложение</p>
-          <button className="app-link">
+          <NavLink className="app-link">
             <img src={playmarket} alt="playmarket" />
             <div className="link-info">
               <span>Доступно на</span>
               <span>Google Play</span>
             </div>
-          </button>
-          <button className="app-link">
+          </NavLink>
+          <NavLink className="app-link">
             <img src={apple} alt="apple" />
             <div className="link-info">
               <span>Доступно на</span>
               <span>App Store</span>
             </div>
-          </button>
+          </NavLink>
         </div>
       </div>
 

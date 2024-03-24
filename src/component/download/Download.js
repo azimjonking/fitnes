@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./download.css";
 import playmarket from "../../assets/playmarket.svg";
 import apple from "../../assets/apple.svg";
@@ -21,20 +22,20 @@ const Download = () => {
           нами!
         </p>
         <div className="download-btns">
-          <button className="app-link">
+          <NavLink className="app-link">
             <img src={playmarket} alt="playmarket" />
             <div className="link-info">
               <span>Доступно на</span>
               <span>Google Play</span>
             </div>
-          </button>
-          <button className="app-link">
+          </NavLink>
+          <NavLink className="app-link">
             <img src={apple} alt="apple" />
             <div className="link-info">
               <span>Доступно на</span>
               <span>App Store</span>
             </div>
-          </button>
+          </NavLink>
         </div>
       </div>
 

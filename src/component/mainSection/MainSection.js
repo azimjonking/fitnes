@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./mainSection.css";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -19,20 +20,20 @@ const mainSection = () => {
       </p>
 
       <div className="mainSection-btns">
-        <button className="app-link">
+        <NavLink className="app-link">
           <img src={playmarket} alt="playmarket" />
           <div className="link-info">
             <span>Доступно на</span>
             <span>Google Play</span>
           </div>
-        </button>
-        <button className="app-link">
+        </NavLink>
+        <NavLink className="app-link">
           <img src={apple} alt="apple" />
           <div className="link-info">
             <span>Доступно на</span>
             <span>App Store</span>
           </div>
-        </button>
+        </NavLink>
       </div>
 
       <div className="mainSection-img">
