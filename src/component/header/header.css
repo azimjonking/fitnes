@@ -2,7 +2,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 10px 7.5%;
+    /* padding: 10px 7.5%; */
+    padding: 0.7vw 7.5%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -14,29 +15,45 @@ header {
 header .logo {
     display: flex;
     align-items: center;
-    gap: 6px;
+    /* gap: 6px; */
+    gap: 0.41vw;
     /* cursor: pointer; */
+}
+
+header .logo img {
+    /* width: 46px; */
+    width: 3.19vw;
 }
 
 header .logo span {
     font-family: var(--lato);
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 1.66vw;
     font-weight: 700;
-    line-height: 28.8px;
+    /* line-height: 28.8px; */
+    line-height: 2vw;
     color: var(--main-color);
 }
 
 header .navbar {
     display: flex;
     align-items: center;
-    gap: 50px;
+    /* gap: 50px; */
+    gap: 3.47vw
+}
+
+header .navbar li {
+    display: flex;
+    align-items: center;
 }
 
 header .navbar li a {
     font-family: var(--lato);
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.38vw;
     font-weight: 400;
-    line-height: 24px;
+    /* line-height: 24px; */
+    line-height: 1.66vw;
     color: var(--text-color);
     transition: all 0.3s ease;
     cursor: pointer;

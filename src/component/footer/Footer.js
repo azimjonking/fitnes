@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-left">
           <div className="footer-logo">
-            {document.location.pathname == "/" ? (
+            {document.location.pathname === "/" ? (
               <Link to="mainSection">
                 <img src={logo} alt="logo" />
                 <span>Fit-lex</span>
@@ -47,7 +47,7 @@ const Footer = () => {
             {links.map((link, i) => {
               return (
                 <li className="link" key={i}>
-              {document.location.pathname == "/" ? (
+              {document.location.pathname === "/" ? (
                 <Link
                   to={link.path}
                   spy={true}

@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header>
-      {document.location.pathname == "/" ? (
+      {document.location.pathname === "/" ? (
         <Link to="mainSection" className="logo">
           <img src={logo} alt="logo" />
           <span>Fit-lex</span>
@@ -32,7 +32,7 @@ const Header = () => {
         {links.map((link, i) => {
           return (
             <li className="link" key={i}>
-              {document.location.pathname == "/" ? (
+              {document.location.pathname === "/" ? (
                 <Link
                   to={link.path}
                   spy={true}
@@ -50,7 +50,7 @@ const Header = () => {
         })}
       </ul>
 
-      {document.location.pathname == "/" ? (
+      {document.location.pathname === "/" ? (
         <Link
           to="download"
           className="btn btn-primary"

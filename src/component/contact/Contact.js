@@ -4,7 +4,7 @@ import "./contact.css";
 const Contact = () => {
   return (
     <section className="contact container" id="contact">
-      {document.location.pathname != "/" && (
+      {document.location.pathname !== "/" && (
         <>
           <div className="shadow shadow-1"></div>
           <div className="shadow shadow-2"></div>

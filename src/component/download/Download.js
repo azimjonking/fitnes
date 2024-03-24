@@ -11,7 +11,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 const Download = () => {
   return (
     <section className="download container" id="download">
-      {document.location.pathname == "/" && (
+      {document.location.pathname === "/" && (
         <>
           <div className="shadow shadow-1"></div>
           <div className="shadow shadow-2"></div>
