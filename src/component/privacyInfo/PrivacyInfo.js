@@ -5,6 +5,10 @@ import privacyData from "./privacyData";
 const PrivacyInfo = () => {
   return (
     <section className="privacyInfo container">
+
+      <div className="shadow shadow-1"></div>
+      <div className="shadow shadow-2"></div>
+
       <h1 className="privacy-title">Политика конфиденциальности</h1>
       <p className="privacy-subtitle">
         Данная Политика конфиденциальности описывает, как мы собираем,

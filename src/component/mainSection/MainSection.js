@@ -10,6 +10,9 @@ import mainImg from "../../assets/mainImg.svg";
 const mainSection = () => {
   return (
     <section className="mainSection container" id='mainSection'>
+      <div className="shadow shadow-1"></div>
+      <div className="shadow shadow-2"></div>
+      <div className="shadow shadow-3"></div>
       <h1 className="main-title">
         Становись сильнее <span>каждый день</span><br /> оставайся в форме{" "}
         <span>всегда</span> вместе с Fit-lex

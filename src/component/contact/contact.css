@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    position: relative;
 }
 
 .contact .title {
@@ -55,4 +57,14 @@
 .contact-form > button {
     margin-top: 50px;
     align-self: center;
+}
+
+.contact .shadow-1 {
+    top: -20%;
+    left: -30%;
+}
+
+.contact .shadow-2 {
+    bottom: -40%;
+    right: -30%;
 }

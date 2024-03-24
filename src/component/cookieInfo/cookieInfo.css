@@ -1,6 +1,7 @@
 .cookieInfo {
     padding-top: 180px;
     padding-bottom: 50px;
+    position: relative;
 }
 
 .cookieInfo-title {
@@ -52,4 +53,15 @@
 
 .cookieInfo .mt-4 {
     margin-top: 40px;
+}
+
+
+.cookieInfo .shadow-1 {
+    top: 5%;
+    left: -40%;
+}
+
+.cookieInfo .shadow-2 {
+    bottom: -20%;
+    right: -40%;
 }

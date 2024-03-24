@@ -1,6 +1,6 @@
 .download {
     padding: 50px 0;
-    
+    position: relative;
 }
 
 .download-container {
@@ -69,4 +69,14 @@
     position: absolute;
     top: -120px;
     right: -60px;
+}
+
+.download .shadow-1 {
+    top: -40%;  
+    right: -20%;
+}
+
+.download .shadow-2 {
+    bottom: -20%;  
+    left: -30%;
 }

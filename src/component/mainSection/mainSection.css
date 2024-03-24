@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .mainSection .main-title {
@@ -39,4 +40,14 @@
 
 .mainSection .mainSection-img img {
     width: 100%;
+}
+
+.mainSection .shadow-1 {
+    top: 6%;
+    left: -30%;
+}
+
+.shadow-3 {
+    bottom: -15%;
+    right: -20%;
 }

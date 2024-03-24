@@ -1,6 +1,7 @@
 .privacyInfo {
     padding-top: 180px;
     padding-bottom: 50px;
+    position: relative;
 }
 
 .privacy-title {
@@ -61,4 +62,14 @@
 
 .privacyData-update {
     margin-top: 20px;
+}
+
+.privacyInfo .shadow-1 {
+    top: 5%;
+    left: -40%;
+}
+
+.privacyInfo .shadow-2 {
+    bottom: -20%;
+    right: -40%;
 }

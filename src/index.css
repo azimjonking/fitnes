@@ -11,6 +11,7 @@
   --main-color: #BBF246;
   --text-color: #FFFFFF;
   --bg-color: linear-gradient(83.75deg, #686868 0%, #BBF246 100%);
+  --shadow: radial-gradient(circle, #BBF246, transparent 70%, transparent 100%);
   --bg-secondary: #192126;
 }
 
@@ -18,7 +19,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: var(--text-color);
 }
 
 html {
@@ -154,4 +154,14 @@ button, input {
   line-height: 28.8px;
   color: #000000;
   transition: all 0.3s ease;
+}
+
+.shadow {
+  width: 60%;
+  height: auto;
+  aspect-ratio:  1 / 1;
+  background: var(--shadow);
+  opacity: 0.3;
+  position: absolute;
+  z-index: -1;
 }

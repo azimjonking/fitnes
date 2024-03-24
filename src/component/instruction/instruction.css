@@ -4,6 +4,7 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: flex-start;
     gap: 50px;
+    position: relative;
 }
 
 .instruction-img {
@@ -60,4 +61,14 @@
     line-height: 24.2px;
     text-align: left;
     color: var(--main-color);
+}
+
+.instruction .shadow-1 {
+    top: -15%;
+    left: -30%;
+}
+
+.instruction .shadow-2 {
+    bottom: -20%;
+    right: -20%;
 }

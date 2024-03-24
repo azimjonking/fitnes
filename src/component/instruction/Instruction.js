@@ -10,6 +10,9 @@ const Instruction = () => {
   return (
     <section className='instruction container' id='instruction'>
 
+      <div className="shadow shadow-1"></div>
+      <div className="shadow shadow-2"></div>
+
       <div className="instruction-img">
         <LazyLoadImage src={instructionImg1} alt="instruction image" effect="blur" />      
       </div>

@@ -4,6 +4,10 @@ import "./cookieInfo.css";
 const CookieInfo = () => {
   return (
     <section className='cookieInfo container'>
+
+      <div className="shadow shadow-1"></div>
+      <div className="shadow shadow-2"></div>
+
       <h1 className="cookieInfo-title">Политика использования файлов cookie</h1>
       <p className="cookieInfo-update">Последнее обновление: 17.01.2024</p>
 
