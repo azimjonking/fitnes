@@ -5,7 +5,7 @@ import instructionImg2 from "../../assets/instruction2.svg";
 
 const Instruction = () => {
   return (
-    <section className='instruction container'>
+    <section className='instruction container' id='instruction'>
 
       <div className="instruction-img">
         <img src={instructionImg1} alt="instruction image" />        

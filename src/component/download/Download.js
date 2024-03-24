@@ -6,7 +6,7 @@ import downloadImg from "../../assets/download.svg";
 
 const Download = () => {
   return (
-    <section className="download container">
+    <section className="download container" id='download'>
 
       <div className="download-container">
       <div className="download-info">

@@ -2,7 +2,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    padding: 30px 7.5%;
+    padding: 10px 7.5%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -15,6 +15,7 @@ header .logo {
     display: flex;
     align-items: center;
     gap: 6px;
+    /* cursor: pointer; */
 }
 
 header .logo span {
@@ -38,6 +39,7 @@ header .navbar li a {
     line-height: 24px;
     color: var(--text-color);
     transition: all 0.3s ease;
+    cursor: pointer;
 }
 
 header .navbar li a:hover {
