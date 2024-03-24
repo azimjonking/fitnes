@@ -64,7 +64,7 @@
     position: relative;
 }
 
-.download-img img {
+.download-img > span {
     width: 110%;
     position: absolute;
     top: -120px;

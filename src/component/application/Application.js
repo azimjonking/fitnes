@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./application.css";
 import applicationData from "./applicationData";
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const Application = () => {
   const [currentTab, setCurrentTab] = useState("1");
 
@@ -34,7 +37,7 @@ const Application = () => {
               <div className="application-content">
                 <div className="img">
                   {content.images[0] && (
-                    <img src={content.images[0]} alt="mobile app" />
+                    <LazyLoadImage src={content.images[0]} alt="mobile app" effect="blur" /> 
                   )}
                 </div>
                 <div className="application-box">
@@ -58,7 +61,7 @@ const Application = () => {
                 </div>
                 <div className="img">
                   {content.images[1] && (
-                    <img src={content.images[1]} alt="mobile app" />
+                    <LazyLoadImage src={content.images[1]} alt="mobile app" effect="blur" /> 
                   )}
                 </div>
               </div>

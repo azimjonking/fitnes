@@ -3,12 +3,15 @@ import "./instruction.css";
 import instructionImg1 from "../../assets/instruction1.svg";
 import instructionImg2 from "../../assets/instruction2.svg";
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const Instruction = () => {
   return (
     <section className='instruction container' id='instruction'>
 
       <div className="instruction-img">
-        <img src={instructionImg1} alt="instruction image" />        
+        <LazyLoadImage src={instructionImg1} alt="instruction image" effect="blur" />      
       </div>
 
       <div className="instruction-info info-1">
@@ -32,7 +35,7 @@ const Instruction = () => {
       </div>
 
       <div className="instruction-img">
-        <img src={instructionImg2} alt="instruction image" />        
+        <LazyLoadImage src={instructionImg2} alt="instruction image" effect="blur" />       
       </div>
 
     </section>

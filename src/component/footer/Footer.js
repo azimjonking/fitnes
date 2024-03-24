@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import "./footer.css";
 import logo from "../../assets/logo.svg";
 import playmarket from "../../assets/playmarket.svg";
@@ -12,30 +13,64 @@ import telegram from "../../assets/telegram.svg";
 const Footer = () => {
   return (
     <footer className="container">
-
       <div className="footer-container">
-
         <div className="footer-left">
           <div className="footer-logo">
-            <Link to="/">
+            <Link to="mainSection">
               <img src={logo} alt="logo" />
               <span>Fit-lex</span>
             </Link>
-            <p>Становись сильнее <span>каждый день</span><br />оставайся в форме <span>всегда</span></p>
+            <p>
+              Становись сильнее <span>каждый день</span>
+              <br />
+              оставайся в форме <span>всегда</span>
+            </p>
           </div>
 
           <ul className="footer-navbar">
             <li>
-              <Link to='/'>Главная</Link>
+              <Link
+                to="mainSection"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+              >
+                Главная
+              </Link>
             </li>
             <li>
-              <Link to='/'>Преимущества</Link>
+              <Link
+                to="opportunity"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                Преимущества
+              </Link>
             </li>
             <li>
-              <Link to='/'>Как это работает</Link>
+              <Link
+                to="instruction"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                Как это работает
+              </Link>
             </li>
             <li>
-              <Link to='/'>Поддержка</Link>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                Поддержка
+              </Link>
             </li>
           </ul>
         </div>
@@ -57,35 +92,34 @@ const Footer = () => {
             </div>
           </button>
         </div>
-
       </div>
 
       <div className="footer-bottom">
         <p className="copyright">© Fit-lex. Все права защищены</p>
         <div className="center">
-          <Link to='/privacy'>Политика конфиденциальности</Link>
-          <Link to='/cookie'>Политика использования файлов cookie</Link>
+          <NavLink to="/privacy">Политика конфиденциальности</NavLink>
+          <NavLink to="/cookie">Политика использования файлов cookie</NavLink>
         </div>
         <ul className="social-network">
           <li>
-            <Link to='/'>
+            <NavLink to="/">
               <img src={whatsup} alt="whatsup" />
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to='/'>
-              <img src={vkontakt} alt="whatsup" />
-            </Link>
+            <NavLink to="/">
+              <img src={vkontakt} alt="vkontakt" />
+            </NavLink>
           </li>
           <li>
-            <Link to='/'>
-              <img src={youtube} alt="whatsup" />
-            </Link>
+            <NavLink to="/">
+              <img src={youtube} alt="youtube" />
+            </NavLink>
           </li>
           <li>
-            <Link to='/'>
-              <img src={telegram} alt="whatsup" />
-            </Link>
+            <NavLink to="https://t.me/">
+              <img src={telegram} alt="telegram" />
+            </NavLink>
           </li>
         </ul>
       </div>

@@ -1,5 +1,7 @@
 import React from "react";
 import "./mainSection.css";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import playmarket from "../../assets/playmarket.svg";
 import apple from "../../assets/apple.svg";
 import mainImg from "../../assets/mainImg.svg";
@@ -34,7 +36,7 @@ const mainSection = () => {
       </div>
 
       <div className="mainSection-img">
-        <img src={mainImg} alt="mobile application" />
+        <LazyLoadImage src={mainImg} alt="mobile application" effect="blur" />
       </div>
 
     </section>

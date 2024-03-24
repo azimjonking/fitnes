@@ -4,6 +4,9 @@ import playmarket from "../../assets/playmarket.svg";
 import apple from "../../assets/apple.svg";
 import downloadImg from "../../assets/download.svg";
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const Download = () => {
   return (
     <section className="download container" id='download'>
@@ -36,7 +39,7 @@ const Download = () => {
       </div>
 
       <div className="download-img">
-        <img src={downloadImg} alt="download img" />
+        <LazyLoadImage src={downloadImg} alt="download img" effect="blur" /> 
       </div>
       </div>
 
