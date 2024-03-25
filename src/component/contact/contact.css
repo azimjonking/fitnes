@@ -54,7 +54,6 @@
 }
 
 .contact-form textarea {
-    border: none;
     outline: none;
     resize: none;
     /* height: 180px; */
