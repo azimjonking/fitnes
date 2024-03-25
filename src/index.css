@@ -30,6 +30,11 @@ body {
   background: #000000;
 }
 
+.app {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 ul {
   list-style: none;
 }
