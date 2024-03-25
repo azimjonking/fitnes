@@ -1,8 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import "./header.css";
 import logo from "../../assets/logo.svg";
+
+export const LinkRouter = ({ children, id, href, as, ...props }) => {
+  const ref = useRef(null);
+
+  if (as) {
+    return (
+      <NavLink
+        {...props}
+        to={href}
+        ref={ref}
+        onClick={() => {
+          if (ref.current.scrollTo && as) {
+            setTimeout(() => {
+              ref.current.scrollTo(id);
+            }, 500);
+          }
+        }}
+      >
+        {children}
+      </NavLink>
+    );
+  }
+
+  return (
+    <Link {...props} to={id} ref={ref}>
+      {children}
+    </Link>
+  );
+};
 
 const Header = () => {
   console.log(document.location.pathname);
@@ -17,10 +46,10 @@ const Header = () => {
   return (
     <header>
       {document.location.pathname === "/" ? (
-        <Link to="mainSection" className="logo">
+        <LinkRouter id="mainSection" className="logo">
           <img src={logo} alt="logo" />
           <span>Fit-lex</span>
-        </Link>
+        </LinkRouter>
       ) : (
         <NavLink to="/" className="logo">
           <img src={logo} alt="logo" />
@@ -33,17 +62,19 @@ const Header = () => {
           return (
             <li className="link" key={i}>
               {document.location.pathname === "/" ? (
-                <Link
-                  to={link.path}
+                <LinkRouter
+                  id={link.path}
                   spy={true}
                   smooth={true}
                   offset={-100}
                   duration={500}
                 >
                   {link.name}
-                </Link>
+                </LinkRouter>
               ) : (
-                <NavLink to="/">{link.name}</NavLink>
+                <LinkRouter id={link.path} as={NavLink} href="/">
+                  {link.name}
+                </LinkRouter>
               )}
             </li>
           );
