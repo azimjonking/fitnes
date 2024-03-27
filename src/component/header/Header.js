@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import "./header.css";
 import logo from "../../assets/logo.svg";
 import menu from "../../assets/menu.svg";
+import close from "../../assets/close.svg";
 
 export const LinkRouter = ({ children, id, href, as, ...props }) => {
   const ref = useRef(null);
@@ -57,7 +58,7 @@ const Header = () => {
   return (
     <header>
       <div className="header-container">
-        <img src={menu} alt="menuBtn" className="menuBtn" onClick={navBtn} />
+        <img src={nav ? close : menu} alt="menuBtn" className="menuBtn" onClick={navBtn} />
 
         {document.location.pathname === "/" ? (
           <LinkRouter id="mainSection" className="logo" onClick={navBtn}>

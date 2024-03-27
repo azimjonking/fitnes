@@ -146,8 +146,7 @@
 }
 
 .opportunity > button {
-  /* margin-top: 60px; */
-  margin-top: 4.16vw;
+  margin-top: 0;
 }
 
 @media screen and (max-width: 768px) {
