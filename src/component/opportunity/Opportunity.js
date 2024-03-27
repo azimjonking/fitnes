@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll"
 import "./opportunity.css";
 import optionsData from "./optionsData";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -41,7 +42,7 @@ const Opportunity = () => {
         </Swiper>
       </div>
 
-      <button className="btn btn-primary">Скачайте сейчас</button>
+      <Link to='download' className="btn btn-primary">Скачайте сейчас</Link>
     </section>
   );
 };

@@ -61,12 +61,16 @@ const Header = () => {
         <img src={nav ? close : menu} alt="menuBtn" className="menuBtn" onClick={navBtn} />
 
         {document.location.pathname === "/" ? (
-          <LinkRouter id="mainSection" className="logo" onClick={navBtn}>
+          <LinkRouter id="mainSection" className="logo" onClick={() => {
+            setNav(false)
+          }}>
             <img src={logo} alt="logo" />
             <span>Fit-lex</span>
           </LinkRouter>
         ) : (
-          <NavLink to="/" className="logo" onClick={navBtn}>
+          <NavLink to="/" className="logo" onClick={() => {
+            setNav(false)
+          }}>
             <img src={logo} alt="logo" />
             <span>Fit-lex</span>
           </NavLink>
@@ -107,12 +111,16 @@ const Header = () => {
             smooth={true}
             offset={-100}
             duration={500}
-            onClick={navBtn}
+            onClick={() => {
+              setNav(false)
+            }}
           >
             Скачайте сейчас
           </Link>
         ) : (
-          <NavLink to="/" className="btn btn-primary" onClick={navBtn}>
+          <NavLink to="/" className="btn btn-primary" onClick={() => {
+            setNav(false)
+          }}>
             Скачайте сейчас
           </NavLink>
         )}
