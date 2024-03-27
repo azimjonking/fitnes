@@ -1,14 +1,14 @@
-import img1 from '../../assets/application/img1.svg';
-import img2 from '../../assets/application/img2.svg';
-import img3 from '../../assets/application/img3.svg';
-import img4 from '../../assets/application/img4.svg';
-import img5 from '../../assets/application/img5.svg';
-import img6 from '../../assets/application/img6.svg';
-import img7 from '../../assets/application/img7.svg';
-import img8 from '../../assets/application/img8.svg';
-import img9 from '../../assets/application/img9.svg';
-import img10 from '../../assets/application/img10.svg';
-import img11 from '../../assets/application/img11.svg';
+import img1 from '../../assets/application/img1.png';
+import img2 from '../../assets/application/img2.png';
+import img3 from '../../assets/application/img3.png';
+import img4 from '../../assets/application/img4.png';
+import img5 from '../../assets/application/img5.png';
+import img6 from '../../assets/application/img6.png';
+import img7 from '../../assets/application/img7.png';
+import img8 from '../../assets/application/img8.png';
+import img9 from '../../assets/application/img9.png';
+import img10 from '../../assets/application/img10.png';
+import img11 from '../../assets/application/img11.png';
 
 const applicationData = [
     {

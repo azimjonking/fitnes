@@ -190,3 +190,72 @@ button, input {
   position: absolute;
   z-index: -1;
 }
+
+
+
+@media screen and (max-width: 430px) {
+  .container {
+    width: 90%;
+  }
+  
+  .title {
+    /* font-size: 24px; */
+    font-size: 5.2vw;
+    /* line-height: 28.8px; */
+    line-height: 6.69vw;
+  }
+  .subtitle {
+    /* font-size: 20px; */
+    font-size: 4.65vw;
+    /* line-height: 24px; */
+    line-height: 5.58vw;
+  }
+
+  .btn-primary {
+    /* padding: 10px; */
+    padding: 2.32vw;
+    /* border-radius: 40px; */
+    border-radius: 9.3vw;
+    /* font-size: 20px; */
+    font-size: 4.65vw;
+    /* line-height: 25.5px; */
+    line-height: 5.93vw;
+    /* letter-spacing: 2px; */
+    letter-spacing: 0.46vw;
+  }
+
+  .app-link {
+    width: 100%;
+    justify-content: center;
+    /* padding: 9px; */
+    padding: 2.09vw;
+    /* border-radius: 50px; */
+    border-radius: 11.62vw;
+    /* gap: 30px; */
+    gap: 6.97vw;
+  }
+
+  .app-link img {
+    width: 10.69vw;
+  }
+
+  .app-link .link-info {
+    /* gap: 5px; */
+    gap: 1.16vw;
+  }
+
+  .app-link .link-info span:nth-child(1) {
+    /* font-size: 16px; */
+    font-size: 3.72vw;
+    /* line-height: 19.2px; */
+    line-height: 4.46vw;
+  }
+
+  .app-link .link-info span:nth-child(2) {
+    /* font-size: 24px; */
+    font-size: 5.58vw;
+    /* line-height: 28.8px; */
+    line-height: 6.69vw;
+  }
+
+}

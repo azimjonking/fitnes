@@ -77,3 +77,55 @@
     bottom: -20%;
     right: -40%;
 }
+
+
+@media screen and (max-width: 430px) {
+    .cookieInfo {
+        padding-top: 23.25vw;
+        padding-bottom: 11.62vw;
+    }
+
+    .cookieInfo-title {
+        font-size: 7.44vw;
+        line-height: 6.97vw;
+    }
+
+    .cookieInfo-update {
+        margin-top: 2.32vw;
+        font-size: 3.72vw;
+        line-height: 6.97vw;
+    }
+    
+    .cookie-info__title {
+        width: 100%;
+        font-size: 3.72vw;
+        line-height: 6.97vw;
+    }
+    
+    .cookie-info__desc,
+    .cookie-info__list-item,
+    .cookie-info__title span {
+        font-size: 3.72vw;
+        line-height: 6.97vw;
+    }
+    
+    .cookie-info__desc,
+    .cookie-info__list-item {
+        width: 100%;
+    }
+    
+    .cookieInfo .mt-4 {
+        margin-top: 9.3vw;
+    }
+    
+    
+    .cookieInfo .shadow-1 {
+        top: 5%;
+        left: -40%;
+    }
+    
+    .cookieInfo .shadow-2 {
+        bottom: -20%;
+        right: -40%;
+    }
+}

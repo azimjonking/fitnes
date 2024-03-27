@@ -62,3 +62,39 @@
     bottom: -15%;
     right: -20%;
 }
+
+
+
+@media screen and (max-width: 430px) {
+    .mainSection {
+        padding-top: 23.25vw;
+    }
+    .mainSection .main-title {
+        /* font-size: 32px; */
+        font-size: 7vw;
+        /* line-height: 38.4px; */
+        line-height: 8.93vw;
+    }
+
+    .mainSection .subtitle {
+        /* margin-top: 20px; */
+        margin-top: 4.65vw;
+        width: 100%;
+    }
+
+    .mainSection .mainSection-btns {
+        width: 100%;
+        /* margin-top: 30px; */
+        margin-top: 6.97vw;
+        flex-direction: column;
+        /* gap: 30px; */
+        gap: 6.97vw;
+    }
+
+    .mainSection .mainSection-img {
+        /* margin-top: 50px; */
+        margin-top: 11.62vw;
+        width: 100%;
+    }
+
+}

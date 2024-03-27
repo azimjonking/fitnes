@@ -5,9 +5,10 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import playmarket from "../../assets/playmarket.svg";
 import apple from "../../assets/apple.svg";
-import mainImg from "../../assets/mainImg.svg";
+import mainImg from "../../assets/mainImg.png";
 
 const mainSection = () => {
+
   return (
     <section className="mainSection container" id='mainSection'>
       <div className="shadow shadow-1"></div>

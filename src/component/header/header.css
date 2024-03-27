@@ -2,6 +2,12 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    background: #000;
+    z-index: 10;
+}
+
+.header-container {
     /* padding: 10px 7.5%; */
     padding: 0.7vw 7.5%;
     width: 100%;
@@ -9,10 +15,14 @@ header {
     align-items: center;
     justify-content: space-between;
     background: #000;
-    z-index: 10;
+    position: relative;
 }
 
-header .logo {
+.header-container .menuBtn {
+    display: none;
+}
+
+.header-container .logo {
     display: flex;
     align-items: center;
     /* gap: 6px; */
@@ -20,12 +30,12 @@ header .logo {
     /* cursor: pointer; */
 }
 
-header .logo img {
+.header-container .logo img {
     /* width: 46px; */
     width: 3.19vw;
 }
 
-header .logo span {
+.header-container .logo span {
     font-family: var(--lato);
     /* font-size: 24px; */
     font-size: 1.66vw;
@@ -35,19 +45,19 @@ header .logo span {
     color: var(--main-color);
 }
 
-header .navbar {
+.header-container .navbar {
     display: flex;
     align-items: center;
     /* gap: 50px; */
     gap: 3.47vw
 }
 
-header .navbar li {
+.header-container .navbar li {
     display: flex;
     align-items: center;
 }
 
-header .navbar li a {
+.header-container .navbar li a {
     font-family: var(--lato);
     /* font-size: 20px; */
     font-size: 1.38vw;
@@ -59,6 +69,71 @@ header .navbar li a {
     cursor: pointer;
 }
 
-header .navbar li a:hover {
+.header-container .navbar li a:hover {
     color: var(--main-color);
+}
+
+
+
+@media screen and (max-width: 430px) {
+    .header-container {
+        padding: 2.32vw 3%;
+    }
+
+    .header-container .menuBtn {
+        display: block;
+        width: 5.58vw;
+    }
+
+    .header-container .logo {
+        gap: 1.39vw;
+    }
+    
+    .header-container .logo img {
+        width: 10.69vw;
+    }
+    
+    .header-container .logo span {
+        font-size: 5.58vw;
+        line-height: 6.69vw;
+    }
+
+    .header-container nav {
+        width: 100%;
+        height: calc(100dvh - 100%);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: all 0.3s linear;
+    }
+
+    .header-container .navbar {
+        padding: 11.62vw 4.65vw;
+        width: 100%;
+        height: auto;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* gap: 50px; */
+        gap: 11.62vw;
+    }
+
+    .header-container nav.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header-container .navbar li a {
+        font-size: 4.65vw;
+        line-height: 5.58vw;
+    }
+
+    .header-container > .btn-primary {
+        padding: 1.16vw 2.09vw;
+        font-size: 3.72vw;
+    }
+
+
+
 }

@@ -92,3 +92,65 @@
     bottom: -20%;  
     left: -30%;
 }
+
+@media screen and (max-width: 430px) {
+    .download {
+        /* padding: 50px 0; */
+        padding: 11.62vw 0;
+    }
+
+    .download-container {
+        margin-top: 23.25vw;
+        grid-template-columns: 1fr;
+        /* border-radius: 20px; */
+        border-radius: 4.65vw;
+    }
+
+    .download-img {
+        order: -1;
+    }
+
+    .download-img > span {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        position: static;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .download-img > span img {
+        width: 130%;
+        object-fit: cover;
+        position: absolute;
+        left: -20%;
+        transform: translateY(-30%);
+    }
+
+    .download-info {
+        width: 100%;
+        /* padding: 30px; */
+        padding: 6.97vw;
+    }
+
+    .download-info .title {
+        width: 100%;
+        font-size: 4.8vw;
+    }
+
+    .download-info .subtitle {
+        /* margin-top: 30px; */
+        margin-top: 6.97vw;
+    }
+
+    .download-info .download-btns {
+        width: 100%;
+        /* margin-top: 30px; */
+        margin-top: 6.97vw;
+        align-items: stretch;
+        flex-direction: column;
+        /* gap: 20px; */
+        gap: 4.65vw;
+    }
+}

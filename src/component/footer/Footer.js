@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef } from "react";
+
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import "./footer.css";
@@ -10,8 +11,36 @@ import vkontakt from "../../assets/vkontakt.svg";
 import youtube from "../../assets/youtube.svg";
 import telegram from "../../assets/telegram.svg";
 
-const Footer = () => {
+export const LinkRouter = ({ children, id, href, as, ...props }) => {
+  const ref = useRef(null);
 
+  if (as) {
+    return (
+      <NavLink
+        {...props}
+        to={href}
+        ref={ref}
+        onClick={() => {
+          if (ref.current.scrollTo && as) {
+            setTimeout(() => {
+              ref.current.scrollTo(id);
+            }, 500);
+          }
+        }}
+      >
+        {children}
+      </NavLink>
+    );
+  }
+
+  return (
+    <Link {...props} to={id} ref={ref}>
+      {children}
+    </Link>
+  );
+};
+
+const Footer = () => {
   const links = [
     { path: "mainSection", name: "Главная" },
     { path: "opportunity", name: "Преимущества" },
@@ -47,27 +76,32 @@ const Footer = () => {
             {links.map((link, i) => {
               return (
                 <li className="link" key={i}>
-              {document.location.pathname === "/" ? (
-                <Link
-                  to={link.path}
-                  spy={true}
-                  smooth={true}
-                  offset={-100}
-                  duration={500}
-                >
-                  {link.name}
-                </Link>
-              ) : (
-                <NavLink to="/">{link.name}</NavLink>
-              )}
-            </li>
-              )
+                  {document.location.pathname === "/" ? (
+                    <LinkRouter
+                      id={link.path}
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
+                    >
+                      {link.name}
+                    </LinkRouter>
+                  ) : (
+                    <LinkRouter id={link.path} as={NavLink} href="/">
+                      {link.name}
+                    </LinkRouter>
+                  )}
+                </li>
+              );
             })}
           </ul>
         </div>
 
         <div className="footer-right">
-          <p>Загрузите наше мобильное приложение</p>
+          <p>
+            Загрузите наше <br />
+            мобильное приложение
+          </p>
           <NavLink className="app-link">
             <img src={playmarket} alt="playmarket" />
             <div className="link-info">

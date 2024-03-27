@@ -11,6 +11,7 @@ import markIcon from "../../assets/mark.svg";
 import { Navigation } from "swiper/modules";
 
 const Testimonial = () => {
+  
   return (
     <section className="testimonial">
       <h1 className="title">

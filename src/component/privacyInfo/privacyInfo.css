@@ -95,3 +95,51 @@
     bottom: -20%;
     right: -40%;
 }
+
+@media screen and (max-width: 430px) {
+    .privacyInfo {
+        padding-top: 23.25vw;
+        padding-bottom: 11.62vw;
+    }
+
+    .privacy-title {
+        font-size: 7.44vw;
+        line-height: 6.97vw;
+    }
+    
+    .privacy-subtitle {
+        width: 100%;
+        margin-top: 11.62vw;
+        font-size: 3.72vw;
+        line-height: 6.97vw;
+    }
+    
+    .privacy-list {
+        width: 100%;
+        margin-top: 6.97vw;
+        gap: 4.65vw;
+    }
+    
+    .privacy-list .list-item {
+        gap: 2.32vw;
+    }
+    
+    .privacy-list .list-item .list-title {
+        gap: 1vw;
+    }
+    
+    .privacy-list .list-item .list-title span{
+        font-size: 3.72vw;
+        line-height: 6.97vw;
+    }
+    
+    .privacy-list .list-item .list-desc, 
+    .privacyData-update {
+        font-size: 3.72vw;
+        line-height: 6.97vw;
+    }
+    
+    .privacyData-update {
+        margin-top: 4.65vw;
+    }
+}

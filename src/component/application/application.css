@@ -100,3 +100,53 @@
     /* margin-top: 50px; */
     margin-top: 3.47vw;
 }
+
+
+@media screen and (max-width: 430px) {
+    .application {
+        padding: 11.62vw 0 0;
+    }
+
+    .categories-btns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5.81vw;
+    }
+
+    .categories-btns .btn {
+        padding: 3vw 1.16vw;
+        font-size: 2.32vw;
+        line-height: 4.15vw;
+        letter-spacing: 0.4vw;
+    }
+
+    .application-container {
+        margin-top: 11.62vw;
+    }
+
+    .application-content {
+        grid-template-columns: repeat(2, 1fr);
+        /* gap: 30px; */
+        gap: 11.62vw 6.97vw;
+    }
+
+    .application-content .application-box {
+        order: 1;
+        grid-column: auto / span 2;
+    }
+
+    .application-content .application-box .box-title {
+        margin-bottom: 3.49vw;
+        font-size: 4.65vw;
+        line-height: 5.81vw;
+    }
+
+    .application-content .application-box .box-text {
+        font-size: 3.72vw;
+        line-height: 5.81vw;
+    }
+
+    .application-content .application-box .text2-1 {
+        margin-top: 11.62vw;
+    }
+}

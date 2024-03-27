@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./download.css";
 import playmarket from "../../assets/playmarket.svg";
 import apple from "../../assets/apple.svg";
-import downloadImg from "../../assets/download.svg";
+import downloadImg from "../../assets/download.png";
 
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
